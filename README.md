@@ -5,8 +5,6 @@ Welcome to the Fake News Detector GitHub project! This project is a simple web-b
 detect fake news articles using Natural Language Processing (NLP) techniques. It uses a pre-trained machine 
 learning model to classify news articles as either "Real" or "Fake" based on their content.
 
-You can check out a live demo of the Fake News Detector <a href = "https://hoaxhound-9ddeb1255403.herokuapp.com/">here</a>. Feel free to try it out with your own news articles!
-
 
 # Installation
 
