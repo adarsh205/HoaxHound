@@ -1,0 +1,52 @@
+{% include "header.html" %}
+
+<!-- Page Header-->
+{% if ans: %}
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/real.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <h1>REAL</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% else: %}
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/fake.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <h1>FAKE</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endif %}
+<!-- Main Content-->
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <p>
+          {% if ans: %}
+          This article is verified and trustworthy, based on credible sources and factual reporting.
+          {% else: %}
+          This article contains misleading or false information—be cautious and verify before believing.
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "footer.html" %}
